@@ -4,7 +4,7 @@
     //* COLORS
     --primary-yellow: #ffd300;
     --primary-darkYellow: #e4aa0b;
-    --primary-blue: #40437c;
+    --primary-blue: #2c3e50;
 
     //* SHADOWS
     --shadow-light-1: 0 3.5rem 4rem rgba(0, 0, 0, .4);
@@ -26,6 +26,7 @@
 
 
     //* FONT-SIZES
+    --fs-heading-big: 4rem;
     --fs-heading: 3rem;
     --fs-title: 2.5rem;
     --fs-text: 1.5rem;
@@ -68,9 +69,11 @@ body {
     position: relative;
     box-sizing: border-box;
     min-height: 100vh;
-    display: grid;
-    place-items: center;
+    // display: grid;
+    // place-items: center;
+    overflow: hidden;
 
     font-family: Saira;
-    background-image: linear-gradient(to right bottom, #fff7e4, #84817a);
+    background-color: var(--primary-blue);
+    // background-image: linear-gradient(to right bottom, #fff7e4, #84817a);
 }

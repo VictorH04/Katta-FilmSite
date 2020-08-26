@@ -1,0 +1,38 @@
+.title {
+    padding-top: 2rem;
+    text-align: center;
+
+    &_header {
+        font-size: var(--fs-heading-big);
+        color: white;
+    }
+
+    &_underheader {
+
+        &--text {
+            font-size: var(--fs-heading);
+            color: white;
+            border-bottom: var(--border-bottom-2);
+        }
+    }
+}
+
+.background_img {
+    background-image: url(/Katta-FilmSite/img/Katta.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+
+    // background-position: 50% 50%;
+    // background-size: 100% 100%;
+
+    filter: grayscale(1);
+    box-shadow: var(--shadow-dark-1);
+
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+
+    // &--img {
+    //     background-image: url(/Katta-FilmSite/img/Katta.jpg);
+    // }
+}
