@@ -41,27 +41,71 @@ body {
   position: relative;
   box-sizing: border-box;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: Saira;
   background-color: var(--primary-blue); }
 
 .title {
-  padding-top: 2rem;
+  padding: 2rem 0 0rem 0;
   text-align: center; }
   .title_header {
     font-size: var(--fs-heading-big);
     color: white; }
-  .title_underheader--text {
+  .title_underheader--underline {
     font-size: var(--fs-heading);
     color: white;
     border-bottom: var(--border-bottom-2); }
 
 .background_img {
-  background-image: url(/Katta-FilmSite/img/Katta.jpg);
+  background-image: url(/img/Katta.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 25%;
+  background-position: 25% 50%;
+  height: 64.2rem;
+  width: 96.3rem;
   filter: grayscale(1);
   box-shadow: var(--shadow-dark-1);
-  height: 100vh;
-  width: 100vw;
+  padding-top: 3rem;
+  margin: 4rem auto;
   z-index: 2; }
+
+.spike_1 {
+  margin: -1rem; }
+
+.spike_2 {
+  transform: rotate(180deg); }
+
+.section_body {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column; }
+  .section_body--title {
+    padding: 2.5rem 5rem;
+    font-size: var(--fs-heading-big);
+    color: #fff; }
+  .section_body--underline {
+    font-size: var(--fs-heading-big);
+    color: white;
+    border-bottom: var(--border-bottom-2); }
+  .section_body--text {
+    display: flex;
+    justify-content: flex-start;
+    padding: 2.5rem 5rem;
+    font-size: var(--fs-text);
+    color: #fff;
+    text-overflow: ellipsis;
+    max-width: 80rem; }
+  .section_body--videowrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20rem; }
+    .section_body--videowrapper-videosvg {
+      height: 25rem;
+      width: 50rem; }
+
+.spike_3 {
+  transform: scaleX(-1); }
+
+.spike_4 {
+  margin-top: -1rem;
+  transform: scaleY(-1); }
