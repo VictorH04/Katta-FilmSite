@@ -11,7 +11,8 @@
   --border-bottom-2: .2rem solid #ffd300;
   --border-bottom-3: .5rem solid #ffd300;
   --border-bottom-4: .1rem solid #ffd300;
-  --border-bottom-5: .2rem solid #40437c;
+  --border-bottom-5: .2rem solid #ffd300;
+  --border-bottom-6: .2rem solid #40437c;
   --fs-heading-big: 4rem;
   --fs-heading: 3rem;
   --fs-title: 2.5rem;
@@ -97,11 +98,24 @@ body {
     max-width: 80rem; }
   .section_body--videowrapper {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 20rem; }
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20rem; }
     .section_body--videowrapper-videosvg {
       height: 25rem;
       width: 50rem; }
+    .section_body--videowrapper-button {
+      margin-left: 10rem;
+      font-size: 1.4rem;
+      cursor: pointer;
+      padding: 5rem 10rem;
+      border: 0.2rem solid var(--primary-yellow);
+      border-radius: 5%;
+      background-color: rgba(123, 3, 212, 0);
+      transition: all .3s; }
+      .section_body--videowrapper-button_text {
+        color: #fff;
+        border-bottom: var(--border-bottom-5); }
 
 .spike_3 {
   transform: scaleX(-1); }

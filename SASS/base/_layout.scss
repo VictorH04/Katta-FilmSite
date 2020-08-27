@@ -72,14 +72,40 @@
 
     &--videowrapper {
         display: flex;
-        justify-content: flex-end;
-        padding-right: 20rem;
+        justify-content: space-between;
+        align-items: center;
+        // flex-direction: row;
+        margin-right: 20rem;
 
-        &-videosvg {
+        &-videosvg { 
+            // justify-content: flex-end;
+
             height: 25rem;
             width: 50rem;
         }
+
+        &-button {
+            // justify-content: flex-start;
+            margin-left: 10rem;
+            font-size: 1.4rem;
+            
+            cursor: pointer;
+            padding: 5rem 10rem;
+            
+            border: .2rem solid var(--primary-yellow);
+            border-radius: 5%;
+            
+            background-color: rgba(123, 03, 212, 0);
+            
+            transition: all .3s;
+            
+            &_text {
+                color: #fff;
+                border-bottom: var(--border-bottom-5);
+            }
+        }
     }
+
 }
 
 .spike_3 {
