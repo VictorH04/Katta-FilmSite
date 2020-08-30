@@ -58,7 +58,7 @@ body {
     border-bottom: var(--border-bottom-2); }
 
 .background_img {
-  background-image: url(./img/Katta.jpg);
+  background-image: url(/img/Katta.jpg);
   background-repeat: no-repeat;
   background-position: 25% 50%;
   height: 64.2rem;
@@ -150,11 +150,13 @@ body {
       color: white;
       border-bottom: var(--border-bottom-2); }
   .section_registration--inputs {
-    width: 50vw;
+    display: flex;
+    flex-direction: column;
     margin-left: 5rem; }
     .section_registration--inputs_name {
+      display: flex;
+      justify-self: flex-end;
       margin-bottom: 2rem;
-      display: block;
       padding: 1rem .5rem;
       font-size: var(--fs-text); }
       .section_registration--inputs_name-text {
