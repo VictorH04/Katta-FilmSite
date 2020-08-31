@@ -150,14 +150,13 @@ body {
       color: white;
       border-bottom: var(--border-bottom-2); }
   .section_registration--inputs {
-    display: flex;
-    flex-direction: column;
     margin-left: 5rem; }
     .section_registration--inputs_name {
-      display: flex;
+      display: block;
       justify-self: flex-end;
       margin-bottom: 2rem;
       padding: 1rem .5rem;
+      padding-right: 4rem;
       font-size: var(--fs-text); }
       .section_registration--inputs_name-text {
         margin-bottom: 1rem;
@@ -168,8 +167,9 @@ body {
           border-bottom: var(--border-bottom-4); }
     .section_registration--inputs_class {
       margin-bottom: 2rem;
-      display: block;
+      display: flex;
       padding: 1rem .5rem;
+      padding-right: 4rem;
       font-size: var(--fs-text); }
       .section_registration--inputs_class-text {
         margin-bottom: 1rem;
@@ -182,6 +182,7 @@ body {
       margin-bottom: 2rem;
       display: block;
       padding: 1rem .5rem;
+      padding-right: 4rem;
       font-size: var(--fs-text); }
       .section_registration--inputs_email-text {
         margin-bottom: 1rem;
@@ -208,7 +209,8 @@ body {
   .section_registration--registrationwrapper {
     display: flex;
     justify-content: flex-end;
-    margin-right: 40rem; }
+    margin-right: 40rem;
+    margin-bottom: 40rem; }
     .section_registration--registrationwrapper-regisvg {
       height: 40rem;
       width: 50rem; }
