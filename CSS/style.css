@@ -128,7 +128,9 @@ body {
   transform: scaleY(-1); }
 
 .section_registration {
-  height: 100vh; }
+  height: 50vh;
+  background-image: linear-gradient(to bottom, #2c3e50, #46698d);
+  height: 100%; }
   .section_registration--title {
     padding: 2.5rem 5rem;
     font-size: var(--fs-heading-big);
@@ -152,12 +154,12 @@ body {
   .section_registration--inputs {
     margin-left: 5rem; }
     .section_registration--inputs_name {
-      display: block;
-      justify-self: flex-end;
+      display: inline-block;
       margin-bottom: 2rem;
-      padding: 1rem .5rem;
-      padding-right: 4rem;
-      font-size: var(--fs-text); }
+      padding: .5rem .5rem;
+      padding-right: 1rem;
+      font-size: var(--fs-text);
+      transition: all .2s; }
       .section_registration--inputs_name-text {
         margin-bottom: 1rem;
         color: #fff; }
@@ -165,12 +167,33 @@ body {
           font-size: var(--fs-text);
           color: white;
           border-bottom: var(--border-bottom-4); }
-    .section_registration--inputs_class {
-      margin-bottom: 2rem;
-      display: flex;
+    .section_registration--inputs_name:focus {
       padding: 1rem .5rem;
-      padding-right: 4rem;
-      font-size: var(--fs-text); }
+      padding-right: 4rem; }
+    .section_registration--inputs_group {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: .5rem .5rem;
+      padding-right: 1rem;
+      font-size: var(--fs-text);
+      transition: all .2s; }
+      .section_registration--inputs_group-text {
+        margin-bottom: 1rem;
+        color: #fff; }
+        .section_registration--inputs_group-text--underline {
+          font-size: var(--fs-text);
+          color: white;
+          border-bottom: var(--border-bottom-4); }
+    .section_registration--inputs_group:focus {
+      padding: 1rem .5rem;
+      padding-right: 4rem; }
+    .section_registration--inputs_class {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: .5rem .5rem;
+      padding-right: 1rem;
+      font-size: var(--fs-text);
+      transition: all .2s; }
       .section_registration--inputs_class-text {
         margin-bottom: 1rem;
         color: #fff; }
@@ -178,12 +201,21 @@ body {
           font-size: var(--fs-text);
           color: white;
           border-bottom: var(--border-bottom-4); }
-    .section_registration--inputs_email {
-      margin-bottom: 2rem;
-      display: block;
+      .section_registration--inputs_class-svg {
+        vertical-align: middle;
+        height: 3rem;
+        width: 3rem;
+        z-index: 99; }
+    .section_registration--inputs_class:focus {
       padding: 1rem .5rem;
-      padding-right: 4rem;
-      font-size: var(--fs-text); }
+      padding-right: 4rem; }
+    .section_registration--inputs_email {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: .5rem .5rem;
+      padding-right: 1rem;
+      font-size: var(--fs-text);
+      transition: all .2s; }
       .section_registration--inputs_email-text {
         margin-bottom: 1rem;
         color: #fff; }
@@ -191,7 +223,16 @@ body {
           font-size: var(--fs-text);
           color: white;
           border-bottom: var(--border-bottom-4); }
+      .section_registration--inputs_email-svg {
+        vertical-align: middle;
+        height: 3rem;
+        width: 3rem;
+        z-index: 99; }
+    .section_registration--inputs_email:focus {
+      padding: 1rem .5rem;
+      padding-right: 4rem; }
     .section_registration--inputs_button {
+      display: block;
       font-size: var(--fs-text);
       margin-top: 2rem;
       cursor: pointer;
@@ -208,9 +249,25 @@ body {
       box-shadow: var(--shadow-dark-1); }
   .section_registration--registrationwrapper {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 40rem;
-    margin-bottom: 40rem; }
+    justify-content: center; }
     .section_registration--registrationwrapper-regisvg {
       height: 40rem;
       width: 50rem; }
+
+.footer {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, #2c3e50, #46698d); }
+  .footer_namewrapper {
+    font-size: var(--fs-text); }
+    .footer_namewrapper--name {
+      text-decoration: none;
+      list-style-type: none;
+      color: #fff; }
+      .footer_namewrapper--name-underline {
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+        border-bottom: var(--border-bottom-2); }
