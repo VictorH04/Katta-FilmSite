@@ -3,6 +3,8 @@
   --primary-yellow: #ffd300;
   --primary-darkYellow: #e4aa0b;
   --primary-blue: #2c3e50;
+  --primary-green: #009432;
+  --primary-red: #EA2027;
   --shadow-light-1: 0 3.5rem 4rem rgba(0, 0, 0, .4);
   --shadow-dark-1: 0 2rem 6rem rgba(0, 0, 0, .4);
   --shadow-dark-2: 0 2rem 4rem rgba(0, 0, 0, .6);
@@ -159,7 +161,8 @@ body {
       padding: .5rem .5rem;
       padding-right: 1rem;
       font-size: var(--fs-text);
-      transition: all .2s; }
+      transition: all .2s;
+      border: none; }
       .section_registration--inputs_name-text {
         margin-bottom: 1rem;
         color: #fff; }
@@ -167,6 +170,17 @@ body {
           font-size: var(--fs-text);
           color: white;
           border-bottom: var(--border-bottom-4); }
+      .section_registration--inputs_name-correct {
+        border-bottom: 0.6rem solid var(--primary-green);
+        outline: none; }
+      .section_registration--inputs_name-false {
+        border-bottom: 0.6rem solid var(--primary-red);
+        outline: none; }
+      .section_registration--inputs_name--correct, .section_registration--inputs_name--failed {
+        vertical-align: middle;
+        height: 3rem;
+        width: 3rem;
+        z-index: 99; }
     .section_registration--inputs_name:focus {
       padding: 1rem .5rem;
       padding-right: 4rem; }
@@ -176,7 +190,8 @@ body {
       padding: .5rem .5rem;
       padding-right: 1rem;
       font-size: var(--fs-text);
-      transition: all .2s; }
+      transition: all .2s;
+      border: none; }
       .section_registration--inputs_group-text {
         margin-bottom: 1rem;
         color: #fff; }
@@ -184,6 +199,17 @@ body {
           font-size: var(--fs-text);
           color: white;
           border-bottom: var(--border-bottom-4); }
+      .section_registration--inputs_group-correct {
+        border-bottom: 0.6rem solid var(--primary-green);
+        outline: none; }
+      .section_registration--inputs_group-false {
+        border-bottom: 0.6rem solid var(--primary-red);
+        outline: none; }
+      .section_registration--inputs_group--correct, .section_registration--inputs_group--failed {
+        vertical-align: middle;
+        height: 3rem;
+        width: 3rem;
+        z-index: 99; }
     .section_registration--inputs_group:focus {
       padding: 1rem .5rem;
       padding-right: 4rem; }
@@ -193,7 +219,8 @@ body {
       padding: .5rem .5rem;
       padding-right: 1rem;
       font-size: var(--fs-text);
-      transition: all .2s; }
+      transition: all .2s;
+      border: none; }
       .section_registration--inputs_class-text {
         margin-bottom: 1rem;
         color: #fff; }
@@ -201,7 +228,13 @@ body {
           font-size: var(--fs-text);
           color: white;
           border-bottom: var(--border-bottom-4); }
-      .section_registration--inputs_class-svg {
+      .section_registration--inputs_class-correct {
+        border-bottom: 0.6rem solid var(--primary-green);
+        outline: none; }
+      .section_registration--inputs_class-false {
+        border-bottom: 0.6rem solid var(--primary-red);
+        outline: none; }
+      .section_registration--inputs_class--correct, .section_registration--inputs_class--failed {
         vertical-align: middle;
         height: 3rem;
         width: 3rem;
@@ -215,7 +248,8 @@ body {
       padding: .5rem .5rem;
       padding-right: 1rem;
       font-size: var(--fs-text);
-      transition: all .2s; }
+      transition: all .2s;
+      border: none; }
       .section_registration--inputs_email-text {
         margin-bottom: 1rem;
         color: #fff; }
@@ -223,7 +257,13 @@ body {
           font-size: var(--fs-text);
           color: white;
           border-bottom: var(--border-bottom-4); }
-      .section_registration--inputs_email-svg {
+      .section_registration--inputs_email-correct {
+        border-bottom: 0.6rem solid var(--primary-green);
+        outline: none; }
+      .section_registration--inputs_email-false {
+        border-bottom: 0.6rem solid var(--primary-red);
+        outline: none; }
+      .section_registration--inputs_email--correct, .section_registration--inputs_email--failed {
         vertical-align: middle;
         height: 3rem;
         width: 3rem;
@@ -235,6 +275,7 @@ body {
       display: block;
       font-size: var(--fs-text);
       margin-top: 2rem;
+      outline: none;
       cursor: pointer;
       padding: 2.5rem 8rem;
       border: 0.2rem solid var(--primary-yellow);
