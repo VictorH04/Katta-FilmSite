@@ -132,9 +132,10 @@ body {
 .section_registration {
   height: 50vh;
   background-image: linear-gradient(to bottom, #2c3e50, #46698d);
-  height: 100%; }
+  height: 100%;
+  padding: 2.5rem 5rem; }
   .section_registration--title {
-    padding: 2.5rem 5rem;
+    padding-bottom: 2.5rem;
     font-size: var(--fs-heading-big);
     color: #fff; }
   .section_registration--underline {
@@ -144,7 +145,7 @@ body {
   .section_registration--text {
     display: flex;
     justify-content: flex-start;
-    padding: 2.5rem 5rem;
+    padding-bottom: 2.5rem;
     font-size: var(--fs-title);
     color: #fff;
     text-overflow: ellipsis;
@@ -153,141 +154,6 @@ body {
       margin-left: .75rem;
       color: white;
       border-bottom: var(--border-bottom-2); }
-  .section_registration--inputs {
-    margin-left: 5rem; }
-    .section_registration--inputs_name {
-      display: inline-block;
-      margin-bottom: 2rem;
-      padding: .5rem .5rem;
-      padding-right: 1rem;
-      font-size: var(--fs-text);
-      transition: all .2s;
-      border: none; }
-      .section_registration--inputs_name-text {
-        margin-bottom: 1rem;
-        color: #fff; }
-        .section_registration--inputs_name-text--underline {
-          font-size: var(--fs-text);
-          color: white;
-          border-bottom: var(--border-bottom-4); }
-      .section_registration--inputs_name-correct {
-        border-bottom: 0.6rem solid var(--primary-green);
-        outline: none; }
-      .section_registration--inputs_name-false {
-        border-bottom: 0.6rem solid var(--primary-red);
-        outline: none; }
-      .section_registration--inputs_name--correct, .section_registration--inputs_name--failed {
-        vertical-align: middle;
-        height: 3rem;
-        width: 3rem;
-        z-index: 99; }
-    .section_registration--inputs_name:focus {
-      padding: 1rem .5rem;
-      padding-right: 4rem; }
-    .section_registration--inputs_group {
-      display: inline-block;
-      margin-bottom: 2rem;
-      padding: .5rem .5rem;
-      padding-right: 1rem;
-      font-size: var(--fs-text);
-      transition: all .2s;
-      border: none; }
-      .section_registration--inputs_group-text {
-        margin-bottom: 1rem;
-        color: #fff; }
-        .section_registration--inputs_group-text--underline {
-          font-size: var(--fs-text);
-          color: white;
-          border-bottom: var(--border-bottom-4); }
-      .section_registration--inputs_group-correct {
-        border-bottom: 0.6rem solid var(--primary-green);
-        outline: none; }
-      .section_registration--inputs_group-false {
-        border-bottom: 0.6rem solid var(--primary-red);
-        outline: none; }
-      .section_registration--inputs_group--correct, .section_registration--inputs_group--failed {
-        vertical-align: middle;
-        height: 3rem;
-        width: 3rem;
-        z-index: 99; }
-    .section_registration--inputs_group:focus {
-      padding: 1rem .5rem;
-      padding-right: 4rem; }
-    .section_registration--inputs_class {
-      display: inline-block;
-      margin-bottom: 2rem;
-      padding: .5rem .5rem;
-      padding-right: 1rem;
-      font-size: var(--fs-text);
-      transition: all .2s;
-      border: none; }
-      .section_registration--inputs_class-text {
-        margin-bottom: 1rem;
-        color: #fff; }
-        .section_registration--inputs_class-text--underline {
-          font-size: var(--fs-text);
-          color: white;
-          border-bottom: var(--border-bottom-4); }
-      .section_registration--inputs_class-correct {
-        border-bottom: 0.6rem solid var(--primary-green);
-        outline: none; }
-      .section_registration--inputs_class-false {
-        border-bottom: 0.6rem solid var(--primary-red);
-        outline: none; }
-      .section_registration--inputs_class--correct, .section_registration--inputs_class--failed {
-        vertical-align: middle;
-        height: 3rem;
-        width: 3rem;
-        z-index: 99; }
-    .section_registration--inputs_class:focus {
-      padding: 1rem .5rem;
-      padding-right: 4rem; }
-    .section_registration--inputs_email {
-      display: inline-block;
-      margin-bottom: 2rem;
-      padding: .5rem .5rem;
-      padding-right: 1rem;
-      font-size: var(--fs-text);
-      transition: all .2s;
-      border: none; }
-      .section_registration--inputs_email-text {
-        margin-bottom: 1rem;
-        color: #fff; }
-        .section_registration--inputs_email-text--underline {
-          font-size: var(--fs-text);
-          color: white;
-          border-bottom: var(--border-bottom-4); }
-      .section_registration--inputs_email-correct {
-        border-bottom: 0.6rem solid var(--primary-green);
-        outline: none; }
-      .section_registration--inputs_email-false {
-        border-bottom: 0.6rem solid var(--primary-red);
-        outline: none; }
-      .section_registration--inputs_email--correct, .section_registration--inputs_email--failed {
-        vertical-align: middle;
-        height: 3rem;
-        width: 3rem;
-        z-index: 99; }
-    .section_registration--inputs_email:focus {
-      padding: 1rem .5rem;
-      padding-right: 4rem; }
-    .section_registration--inputs_button {
-      display: block;
-      font-size: var(--fs-text);
-      margin-top: 2rem;
-      outline: none;
-      cursor: pointer;
-      padding: 2.5rem 8rem;
-      border: 0.2rem solid var(--primary-yellow);
-      border-radius: 5%;
-      background-color: rgba(123, 3, 212, 0);
-      transition: all .3s; }
-      .section_registration--inputs_button-text {
-        color: #fff;
-        border-bottom: var(--border-bottom-5); }
-    .section_registration--inputs_button:hover {
-      transform: translateY(-1rem);
-      box-shadow: var(--shadow-dark-1); }
   .section_registration--registrationwrapper {
     display: flex;
     justify-content: center; }
