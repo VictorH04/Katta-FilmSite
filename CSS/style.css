@@ -118,7 +118,7 @@ body {
       height: 100vh; } }
   @media screen and (max-width: 56.25em) {
     .section_body {
-      height: 80vh; } }
+      height: 100vh; } }
   @media screen and (max-width: 37.5em) {
     .section_body {
       height: 60vh; } }
