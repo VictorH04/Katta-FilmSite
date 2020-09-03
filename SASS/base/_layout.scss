@@ -5,16 +5,30 @@
     &_header {
         font-size: var(--fs-heading-big);
         color: white;
+
+        @media screen and (max-width: $bp-phone) {
+            text-align: center;
+            font-size: 8rem;
+        }
     }
 
     &_underheader {
         text-decoration: none;
+        // scroll-behavior: smooth;
 
         &--underline {
             font-size: var(--fs-heading);
             color: white;
             border-bottom: var(--border-bottom-2);
+            text-align: center;
+
+            @media screen and (max-width: $bp-phone) {
+                text-align: center;
+                font-size: 6rem;
+                border-bottom: var(--border-bottom-3);
+            }
         }
+
     }
 
     @media screen and (max-width: $bp-medium) {
@@ -23,6 +37,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    @media screen and (max-width: $bp-small) {}
+
+    // @media screen and (max-width: $bp-smallest) {
+    //     height: 45vh;
+    // }
+
+    @media screen and (max-width: $bp-phone) {
+        font-size: var(--fs-heading-big);
     }
 }
 
@@ -75,25 +99,40 @@
         height: 75vh;
     }
 
-    @media screen and (max-width: $bp-phone) {
-        height: 10vh;
+    @media screen and (max-width: $bp-small) {
+        height: 55vh;
     }
 
-    @media screen and (max-width: $bp-smallest) {
-        height: 45vh;
+    // @media screen and (max-width: $bp-smallest) {
+    //     height: 45vh;
+    // }
+
+    @media screen and (max-width: $bp-phone) {
+        height: 60vh;
     }
+
 
 
     &--title {
         padding: 2.5rem 5rem;
         font-size: var(--fs-heading-big);
         color: #fff;
+
+        @media screen and (max-width: $bp-phone) {
+            font-size: 5.5rem;
+            text-align: center;
+        }
     }
 
     &--underline {
         font-size: var(--fs-heading-big);
         color: white;
         border-bottom: var(--border-bottom-2);
+
+        @media screen and (max-width: $bp-phone) {
+            font-size: 5rem;
+            text-align: center;
+        }
     }
 
     &--text {
@@ -101,10 +140,16 @@
         justify-content: flex-start;
         padding: 2.5rem 5rem;
 
-        font-size: var(--fs-text);
+        font-size: var(--fs-text-big);
         color: #fff;
         text-overflow: ellipsis;
         max-width: 80rem;
+
+        @media screen and (max-width: $bp-small) {
+            font-size: 3rem;
+            max-width: none;
+            text-align: center;
+        }
     }
 
     &--videowrapper {
@@ -119,6 +164,10 @@
 
             height: 25rem;
             width: 50rem;
+
+            @media screen and (max-width: $bp-phone) {
+                display: none;
+            }
         }
 
         &-button {
@@ -139,7 +188,26 @@
             &_text {
                 color: #fff;
                 border-bottom: var(--border-bottom-5);
+
+                @media screen and (max-width: $bp-phone) {
+                    border-bottom: var(--border-bottom-3);
+                }
             }
+
+            @media screen and (max-width: $bp-phone) {
+                font-size: 5rem;
+                // margin: 0 auto;
+                margin-left: 0rem;
+                border: .6rem solid var(--primary-yellow);
+            }
+        }
+
+
+        @media screen and (max-width: $bp-phone) {
+            justify-content: center;
+            align-items: center;
+            margin-top: 4rem;
+            margin-right: 0rem;
         }
 
         &-button:hover {
@@ -438,9 +506,26 @@
         font-size: var(--fs-text);
 
         &--name {
+            font-size: var(--fs-heading);
             text-decoration: none;
+            text-align: center;
             list-style-type: none;
             color: #fff;
+
+            &-underline {
+                text-decoration: none;
+                list-style-type: none;
+                color: white;
+                border-bottom: var(--border-bottom-2);
+            }
+        }
+
+        &--contact {
+            font-weight: 300;
+            text-align: center;
+            color: #fff;
+            font-size: var(--fs-title);
+            margin-top: 2rem;
 
             &-underline {
                 text-decoration: none;
