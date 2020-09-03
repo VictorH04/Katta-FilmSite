@@ -34,8 +34,7 @@ html {
   box-sizing: border-box;
   font-family: 'Saira', sans-serif;
   min-height: 100vh;
-  scroll-behavior: smooth;
-  overflow-y: scroll; }
+  scroll-behavior: smooth; }
   @media screen and (max-width: 68.75em) {
     html {
       font-size: 50%; } }
@@ -116,10 +115,13 @@ body {
   flex-direction: column; }
   @media screen and (max-width: 56.25em) {
     .section_body {
-      height: 75vh; } }
+      height: 80vh; } }
   @media screen and (max-width: 37.5em) {
     .section_body {
-      height: 55vh; } }
+      height: 60vh; } }
+  @media screen and (max-width: 440px) {
+    .section_body {
+      height: 60vh; } }
   @media screen and (max-width: 23.75em) {
     .section_body {
       height: 60vh; } }
@@ -127,6 +129,14 @@ body {
     padding: 2.5rem 5rem;
     font-size: var(--fs-heading-big);
     color: #fff; }
+    @media screen and (max-width: 56.25em) {
+      .section_body--title {
+        font-size: 5rem;
+        text-align: center; } }
+    @media screen and (max-width: 440px) {
+      .section_body--title {
+        font-size: 5.5rem;
+        text-align: center; } }
     @media screen and (max-width: 23.75em) {
       .section_body--title {
         font-size: 5.5rem;
@@ -135,6 +145,14 @@ body {
     font-size: var(--fs-heading-big);
     color: white;
     border-bottom: var(--border-bottom-2); }
+    @media screen and (max-width: 56.25em) {
+      .section_body--underline {
+        font-size: 4.5rem;
+        text-align: center; } }
+    @media screen and (max-width: 440px) {
+      .section_body--underline {
+        font-size: 5rem;
+        text-align: center; } }
     @media screen and (max-width: 23.75em) {
       .section_body--underline {
         font-size: 5rem;
@@ -147,7 +165,17 @@ body {
     color: #fff;
     text-overflow: ellipsis;
     max-width: 80rem; }
+    @media screen and (max-width: 56.25em) {
+      .section_body--text {
+        font-size: 2rem;
+        max-width: none;
+        text-align: center; } }
     @media screen and (max-width: 37.5em) {
+      .section_body--text {
+        font-size: 3rem;
+        max-width: none;
+        text-align: center; } }
+    @media screen and (max-width: 440px) {
       .section_body--text {
         font-size: 3rem;
         max-width: none;
@@ -160,6 +188,9 @@ body {
     .section_body--videowrapper-videosvg {
       height: 25rem;
       width: 50rem; }
+      @media screen and (max-width: 440px) {
+        .section_body--videowrapper-videosvg {
+          display: none; } }
       @media screen and (max-width: 23.75em) {
         .section_body--videowrapper-videosvg {
           display: none; } }
@@ -175,14 +206,42 @@ body {
       .section_body--videowrapper-button_text {
         color: #fff;
         border-bottom: var(--border-bottom-5); }
+        @media screen and (max-width: 56.25em) {
+          .section_body--videowrapper-button_text {
+            border-bottom: var(--border-bottom-2); } }
+        @media screen and (max-width: 440px) {
+          .section_body--videowrapper-button_text {
+            border-bottom: var(--border-bottom-3); } }
         @media screen and (max-width: 23.75em) {
           .section_body--videowrapper-button_text {
             border-bottom: var(--border-bottom-3); } }
+      @media screen and (max-width: 56.25em) {
+        .section_body--videowrapper-button {
+          font-size: 3rem;
+          margin-left: 0rem;
+          border: 0.6rem solid var(--primary-yellow); } }
+      @media screen and (max-width: 440px) {
+        .section_body--videowrapper-button {
+          font-size: 5rem;
+          margin-left: 0rem;
+          border: 0.6rem solid var(--primary-yellow); } }
       @media screen and (max-width: 23.75em) {
         .section_body--videowrapper-button {
           font-size: 5rem;
           margin-left: 0rem;
           border: 0.6rem solid var(--primary-yellow); } }
+    @media screen and (max-width: 56.25em) {
+      .section_body--videowrapper {
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2rem;
+        margin-right: 0rem; } }
+    @media screen and (max-width: 440px) {
+      .section_body--videowrapper {
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        margin-right: 0rem; } }
     @media screen and (max-width: 23.75em) {
       .section_body--videowrapper {
         justify-content: center;

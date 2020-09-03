@@ -96,16 +96,20 @@
 
 
     @media screen and (max-width: $bp-medium) {
-        height: 75vh;
+        height: 80vh;
     }
 
     @media screen and (max-width: $bp-small) {
-        height: 55vh;
+        height: 60vh;
     }
 
     // @media screen and (max-width: $bp-smallest) {
     //     height: 45vh;
     // }
+
+    @media screen and (max-width: 440px) {
+        height: 60vh;
+    }
 
     @media screen and (max-width: $bp-phone) {
         height: 60vh;
@@ -118,6 +122,16 @@
         font-size: var(--fs-heading-big);
         color: #fff;
 
+        @media screen and (max-width: $bp-medium) {
+            font-size: 5rem;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 440px) {
+            font-size: 5.5rem;
+            text-align: center;
+        }
+
         @media screen and (max-width: $bp-phone) {
             font-size: 5.5rem;
             text-align: center;
@@ -128,6 +142,16 @@
         font-size: var(--fs-heading-big);
         color: white;
         border-bottom: var(--border-bottom-2);
+
+        @media screen and (max-width: $bp-medium) {
+            font-size: 4.5rem;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 440px) {
+            font-size: 5rem;
+            text-align: center;
+        }
 
         @media screen and (max-width: $bp-phone) {
             font-size: 5rem;
@@ -145,11 +169,24 @@
         text-overflow: ellipsis;
         max-width: 80rem;
 
+        @media screen and (max-width: $bp-medium) {
+            font-size: 2rem;
+            max-width: none;
+            text-align: center;
+        }
+
         @media screen and (max-width: $bp-small) {
             font-size: 3rem;
             max-width: none;
             text-align: center;
         }
+
+        @media screen and (max-width: 440px) {
+            font-size: 3rem;
+            max-width: none;
+            text-align: center;
+        }
+
     }
 
     &--videowrapper {
@@ -164,6 +201,10 @@
 
             height: 25rem;
             width: 50rem;
+
+            @media screen and (max-width: 440px) {
+                display: none;
+            }
 
             @media screen and (max-width: $bp-phone) {
                 display: none;
@@ -189,9 +230,31 @@
                 color: #fff;
                 border-bottom: var(--border-bottom-5);
 
+                @media screen and (max-width: $bp-medium) {
+                    border-bottom: var(--border-bottom-2);
+                }
+
+                @media screen and (max-width: 440px) {
+                    border-bottom: var(--border-bottom-3);
+                }
+
                 @media screen and (max-width: $bp-phone) {
                     border-bottom: var(--border-bottom-3);
                 }
+            }
+
+            @media screen and (max-width: $bp-medium) {
+                font-size: 3rem;
+                // margin: 0 auto;
+                margin-left: 0rem;
+                border: .6rem solid var(--primary-yellow);
+            }
+
+            @media screen and (max-width: 440px) {
+                font-size: 5rem;
+                // margin: 0 auto;
+                margin-left: 0rem;
+                border: .6rem solid var(--primary-yellow);
             }
 
             @media screen and (max-width: $bp-phone) {
@@ -202,6 +265,19 @@
             }
         }
 
+        @media screen and (max-width: $bp-medium) {
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 2rem;
+            margin-right: 0rem;
+        }
+
+        @media screen and (max-width: 440px) {
+            justify-content: center;
+            align-items: center;
+            margin-top: 4rem;
+            margin-right: 0rem;
+        }
 
         @media screen and (max-width: $bp-phone) {
             justify-content: center;
