@@ -54,15 +54,23 @@ body {
   .title_header {
     font-size: var(--fs-heading-big);
     color: white; }
-  .title_underheader--underline {
-    font-size: var(--fs-heading);
-    color: white;
-    border-bottom: var(--border-bottom-2); }
+  .title_underheader {
+    text-decoration: none; }
+    .title_underheader--underline {
+      font-size: var(--fs-heading);
+      color: white;
+      border-bottom: var(--border-bottom-2); }
+  @media screen and (max-width: 56.25em) {
+    .title {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
 
 .background_img {
-  background-image: url(/img/Katta.jpg);
+  background-image: url(../img/Katta.jpg);
   background-repeat: no-repeat;
-  background-position: 25% 50%;
   height: 64.2rem;
   width: 96.3rem;
   filter: grayscale(1);
@@ -70,18 +78,33 @@ body {
   padding-top: 3rem;
   margin: 4rem auto;
   z-index: 2; }
+  @media screen and (max-width: 56.25em) {
+    .background_img {
+      background-image: none;
+      box-shadow: none; } }
 
 .spike_1 {
-  margin: -1rem; }
+  margin-bottom: -1rem;
+  width: 100vw; }
 
 .spike_2 {
-  transform: rotate(180deg); }
+  transform: rotate(180deg);
+  width: 100vw; }
 
 .section_body {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: flex-start;
   flex-direction: column; }
+  @media screen and (max-width: 56.25em) {
+    .section_body {
+      height: 75vh; } }
+  @media screen and (max-width: 23.75em) {
+    .section_body {
+      height: 10vh; } }
+  @media screen and (max-width: 31.25em) {
+    .section_body {
+      height: 45vh; } }
   .section_body--title {
     padding: 2.5rem 5rem;
     font-size: var(--fs-heading-big);
@@ -123,11 +146,13 @@ body {
       border: 0.3rem solid var(--primary-yellow); }
 
 .spike_3 {
-  transform: scaleX(-1); }
+  transform: scaleX(-1);
+  width: 100vw; }
 
 .spike_4 {
   margin-top: -1rem;
-  transform: scaleY(-1); }
+  transform: scaleY(-1);
+  width: 100vw; }
 
 .section_registration {
   height: 50vh;

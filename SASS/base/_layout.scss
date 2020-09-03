@@ -8,19 +8,30 @@
     }
 
     &_underheader {
+        text-decoration: none;
+
         &--underline {
             font-size: var(--fs-heading);
             color: white;
             border-bottom: var(--border-bottom-2);
         }
     }
+
+    @media screen and (max-width: $bp-medium) {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .background_img {
     background-image: url(../img/Katta.jpg);
     background-repeat: no-repeat;
-    background-position: 25% 50%;
+    // background-position: 25% 50%;
     height: 64.2rem;
+    // width: 100%;
     width: 96.3rem;
 
     filter: grayscale(1);
@@ -29,21 +40,49 @@
     padding-top: 3rem;
     margin: 4rem auto;
     z-index: 2;
+
+    @media screen and (max-width: $bp-smallest) {}
+
+    @media screen and (max-width: $bp-medium) {
+        background-image: none;
+        box-shadow: none;
+
+        // background-image: url(../img/cinema.svg);
+        // filter: none;
+        // height: 50rem;
+        // width: 75rem;
+    }
 }
 
 .spike_1 {
-    margin: -1rem;
+    margin-bottom: -1rem;
+    width: 100vw;
 }
 
 .spike_2 {
     transform: rotate(180deg);
+    width: 100vw;
 }
 
 .section_body {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+
+
+    @media screen and (max-width: $bp-medium) {
+        height: 75vh;
+    }
+
+    @media screen and (max-width: $bp-phone) {
+        height: 10vh;
+    }
+
+    @media screen and (max-width: $bp-smallest) {
+        height: 45vh;
+    }
+
 
     &--title {
         padding: 2.5rem 5rem;
@@ -113,11 +152,13 @@
 .spike_3 {
     // margin-top: 10rem;
     transform: scaleX(-1);
+    width: 100vw;
 }
 
 .spike_4 {
     margin-top: -1rem;
     transform: scaleY(-1);
+    width: 100vw;
 }
 
 .section_registration {
