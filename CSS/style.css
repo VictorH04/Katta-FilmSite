@@ -62,6 +62,18 @@ body {
       .title_header {
         text-align: center;
         font-size: 8rem; } }
+    @media screen and (max-width: 440px) {
+      .title_header {
+        text-align: center;
+        font-size: 6rem; } }
+    @media screen and (max-width: 37.5em) {
+      .title_header {
+        text-align: center;
+        font-size: 7rem; } }
+    @media screen and (max-width: 56.25em) {
+      .title_header {
+        text-align: center;
+        font-size: 8rem; } }
   .title_underheader {
     text-decoration: none; }
     .title_underheader--underline {
@@ -74,6 +86,14 @@ body {
           text-align: center;
           font-size: 6rem;
           border-bottom: var(--border-bottom-3); } }
+      @media screen and (max-width: 440px) {
+        .title_underheader--underline {
+          text-align: center;
+          font-size: 5rem; } }
+      @media screen and (max-width: 56.25em) {
+        .title_underheader--underline {
+          text-align: center;
+          font-size: 6rem; } }
   @media screen and (max-width: 56.25em) {
     .title {
       height: 100vh;
