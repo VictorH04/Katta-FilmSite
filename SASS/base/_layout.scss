@@ -38,8 +38,7 @@
 		align-items: center;
 	}
 
-	@media screen and (max-width: $bp-small) {
-	}
+	@media screen and (max-width: $bp-small) {}
 
 	// @media screen and (max-width: $bp-smallest) {
 	//     height: 45vh;
@@ -65,8 +64,7 @@
 	margin: 4rem auto;
 	z-index: 2;
 
-	@media screen and (max-width: $bp-smallest) {
-	}
+	@media screen and (max-width: $bp-smallest) {}
 
 	@media screen and (max-width: $bp-medium) {
 		background-image: none;
@@ -95,7 +93,11 @@
 	justify-content: flex-start;
 	flex-direction: column;
 
-	@media screen and (max-width: $bp-largest) {
+	@media screen and (min-width: $bp-largest) {
+		height: 125vh;
+	}
+
+	@media screen and (min-width: $bp-large) {
 		height: 100vh;
 	}
 
@@ -116,7 +118,7 @@
 	}
 
 	@media screen and (max-width: $bp-phone) {
-		height: 60vh;
+		height: 70vh;
 	}
 
 	&--title {
@@ -187,6 +189,55 @@
 			font-size: 3rem;
 			max-width: none;
 			text-align: center;
+		}
+	}
+
+	&--frist {
+		padding: 2.5rem 5rem;
+		color: #fff;
+		font-size: var(--fs-heading);
+
+		&_underline {
+			font-size: var(--fs-heading);
+			border-bottom: var(--border-bottom-2);
+
+			@media screen and (max-width: $bp-medium) {
+				text-align: center;
+			}
+
+			@media screen and (max-width: $bp-small) {
+				text-align: center;
+			}
+
+			@media screen and (max-width: 440px) {
+				text-align: center;
+			}
+
+			@media screen and (max-width: $bp-phone) {
+				text-align: center;
+				font-size: 5rem;
+			}
+		}
+
+
+		@media screen and (max-width: $bp-medium) {
+			text-align: center;
+			font-size: 5rem;
+		}
+
+		@media screen and (max-width: $bp-small) {
+			text-align: center;
+			font-size: 5rem;
+		}
+
+		@media screen and (max-width: 440px) {
+			text-align: center;
+			font-size: 5rem;
+		}
+
+		@media screen and (max-width: $bp-phone) {
+			text-align: center;
+			font-size: 5rem;
 		}
 	}
 
@@ -317,6 +368,23 @@
 		// margin-top: 5rem;
 		font-size: var(--fs-heading-big);
 		color: #fff;
+
+		@media screen and (max-width: $bp-medium) {
+			font-size: 2rem;
+		}
+
+		@media screen and (max-width: $bp-small) {
+			font-size: 3rem;
+		}
+
+		@media screen and (max-width: 440px) {
+			font-size: 3.5rem;
+		}
+
+		@media screen and (max-width: $bp-phone) {
+			font-size: 5rem;
+		}
+
 	}
 
 	&--underline {

@@ -113,7 +113,10 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-direction: column; }
-  @media screen and (max-width: 75em) {
+  @media screen and (min-width: 75em) {
+    .section_body {
+      height: 125vh; } }
+  @media screen and (min-width: 68.75em) {
     .section_body {
       height: 100vh; } }
   @media screen and (max-width: 56.25em) {
@@ -127,7 +130,7 @@ body {
       height: 60vh; } }
   @media screen and (max-width: 23.75em) {
     .section_body {
-      height: 60vh; } }
+      height: 70vh; } }
   .section_body--title {
     padding: 2.5rem 5rem;
     font-size: var(--fs-heading-big);
@@ -183,6 +186,42 @@ body {
         font-size: 3rem;
         max-width: none;
         text-align: center; } }
+  .section_body--frist {
+    padding: 2.5rem 5rem;
+    color: #fff;
+    font-size: var(--fs-heading); }
+    .section_body--frist_underline {
+      font-size: var(--fs-heading);
+      border-bottom: var(--border-bottom-2); }
+      @media screen and (max-width: 56.25em) {
+        .section_body--frist_underline {
+          text-align: center; } }
+      @media screen and (max-width: 37.5em) {
+        .section_body--frist_underline {
+          text-align: center; } }
+      @media screen and (max-width: 440px) {
+        .section_body--frist_underline {
+          text-align: center; } }
+      @media screen and (max-width: 23.75em) {
+        .section_body--frist_underline {
+          text-align: center;
+          font-size: 5rem; } }
+    @media screen and (max-width: 56.25em) {
+      .section_body--frist {
+        text-align: center;
+        font-size: 5rem; } }
+    @media screen and (max-width: 37.5em) {
+      .section_body--frist {
+        text-align: center;
+        font-size: 5rem; } }
+    @media screen and (max-width: 440px) {
+      .section_body--frist {
+        text-align: center;
+        font-size: 5rem; } }
+    @media screen and (max-width: 23.75em) {
+      .section_body--frist {
+        text-align: center;
+        font-size: 5rem; } }
   .section_body--videowrapper {
     display: flex;
     justify-content: space-between;
@@ -273,6 +312,18 @@ body {
     padding-bottom: 2.5rem;
     font-size: var(--fs-heading-big);
     color: #fff; }
+    @media screen and (max-width: 56.25em) {
+      .section_registration--title {
+        font-size: 2rem; } }
+    @media screen and (max-width: 37.5em) {
+      .section_registration--title {
+        font-size: 3rem; } }
+    @media screen and (max-width: 440px) {
+      .section_registration--title {
+        font-size: 3.5rem; } }
+    @media screen and (max-width: 23.75em) {
+      .section_registration--title {
+        font-size: 5rem; } }
   .section_registration--underline {
     font-size: var(--fs-heading-big);
     color: white;
