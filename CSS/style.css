@@ -142,16 +142,16 @@ body {
       height: 110vh; } }
   @media screen and (max-width: 56.25em) {
     .section_body {
-      height: 120vh; } }
+      height: 105vh; } }
   @media screen and (max-width: 37.5em) {
     .section_body {
-      height: 70vh; } }
+      height: 65vh; } }
   @media screen and (max-width: 440px) {
     .section_body {
-      height: 72.5vh; } }
+      height: 65vh; } }
   @media screen and (max-width: 23.75em) {
     .section_body {
-      height: 85vh; } }
+      height: 77.5vh; } }
   .section_body--title {
     padding: 2.5rem 5rem;
     font-size: var(--fs-heading-big);
@@ -190,7 +190,7 @@ body {
     font-size: var(--fs-text-big);
     color: #fff;
     text-overflow: ellipsis;
-    max-width: 80rem; }
+    max-width: 82rem; }
     @media screen and (max-width: 56.25em) {
       .section_body--text {
         font-size: 2rem;
