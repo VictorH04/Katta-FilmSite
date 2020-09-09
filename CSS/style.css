@@ -268,10 +268,13 @@ body {
       border: 0.2rem solid var(--primary-yellow);
       border-radius: 5%;
       background-color: rgba(123, 3, 212, 0);
+      color: #fff;
       transition: all .3s; }
       .section_body--videowrapper-button_text {
         color: #fff;
-        border-bottom: var(--border-bottom-5); }
+        border-bottom: var(--border-bottom-5);
+        text-decoration: none;
+        list-style-type: none; }
         @media screen and (max-width: 56.25em) {
           .section_body--videowrapper-button_text {
             border-bottom: var(--border-bottom-2); } }
@@ -281,6 +284,11 @@ body {
         @media screen and (max-width: 23.75em) {
           .section_body--videowrapper-button_text {
             border-bottom: var(--border-bottom-3); } }
+        .section_body--videowrapper-button_text--link {
+          color: #fff;
+          text-decoration: none;
+          list-style-type: none;
+          font-family: 'Saira'; }
       @media screen and (max-width: 56.25em) {
         .section_body--videowrapper-button {
           font-size: 3rem;

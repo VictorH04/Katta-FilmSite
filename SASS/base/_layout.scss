@@ -306,12 +306,15 @@
 			border-radius: 5%;
 
 			background-color: rgba(123, 03, 212, 0);
+			color: #fff;
 
 			transition: all .3s;
 
 			&_text {
 				color: #fff;
 				border-bottom: var(--border-bottom-5);
+				text-decoration: none;
+				list-style-type: none;
 
 				@media screen and (max-width: $bp-medium) {
 					border-bottom: var(--border-bottom-2);
@@ -323,6 +326,13 @@
 
 				@media screen and (max-width: $bp-phone) {
 					border-bottom: var(--border-bottom-3);
+				}
+
+				&--link {
+					color: #fff;
+					text-decoration: none;
+					list-style-type: none;
+					font-family: 'Saira';
 				}
 			}
 
