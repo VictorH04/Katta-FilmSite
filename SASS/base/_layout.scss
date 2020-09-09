@@ -120,19 +120,19 @@
 	flex-direction: column;
 
 	@media screen and (min-width: $bp-largest) {
-		height: 110vh;
+		height: 130vh;
 	}
 
 	@media screen and (min-width: $bp-large) {
-		height: 110vh;
+		height: 125vh;
 	}
 
 	@media screen and (max-width: $bp-medium) {
-		height: 105vh;
+		height: 125vh;
 	}
 
 	@media screen and (max-width: $bp-small) {
-		height: 65vh;
+		height: 80vh;
 	}
 
 	// @media screen and (max-width: $bp-smallest) {
@@ -140,11 +140,11 @@
 	// }
 
 	@media screen and (max-width: 440px) {
-		height: 65vh;
+		height: 80vh;
 	}
 
 	@media screen and (max-width: $bp-phone) {
-		height: 77.5vh;
+		height: 100vh;
 	}
 
 	&--title {
@@ -235,14 +235,17 @@
 
 			@media screen and (max-width: $bp-medium) {
 				text-align: center;
+				font-size: var(--fs-heading-big);
 			}
 
 			@media screen and (max-width: $bp-small) {
 				text-align: center;
+				font-size: var(--fs-heading-big);
 			}
 
 			@media screen and (max-width: 440px) {
 				text-align: center;
+				font-size: var(--fs-heading-big);
 			}
 
 			@media screen and (max-width: $bp-phone) {
