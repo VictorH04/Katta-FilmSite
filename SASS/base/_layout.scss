@@ -131,6 +131,11 @@
 		height: 125vh;
 	}
 
+	@media screen and (max-width: 800px) {
+		height: 120vh;
+	}
+
+
 	@media screen and (max-width: $bp-small) {
 		height: 80vh;
 	}
@@ -140,7 +145,7 @@
 	// }
 
 	@media screen and (max-width: 440px) {
-		height: 80vh;
+		height: 82.5vh;
 	}
 
 	@media screen and (max-width: $bp-phone) {
@@ -154,6 +159,11 @@
 
 		@media screen and (max-width: $bp-medium) {
 			font-size: 5rem;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 780px) {
+			font-size: 5.5rem;
 			text-align: center;
 		}
 
@@ -175,6 +185,11 @@
 
 		@media screen and (max-width: $bp-medium) {
 			font-size: 4.5rem;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 780px) {
+			font-size: 5rem;
 			text-align: center;
 		}
 
@@ -200,6 +215,12 @@
 		max-width: 82rem;
 
 		@media screen and (max-width: $bp-medium) {
+			font-size: 2rem;
+			max-width: none;
+			text-align: center;
+		}
+
+		@media screen and (max-width: 780px) {
 			font-size: 2rem;
 			max-width: none;
 			text-align: center;
@@ -234,6 +255,11 @@
 			border-bottom: var(--border-bottom-2);
 
 			@media screen and (max-width: $bp-medium) {
+				text-align: center;
+				font-size: var(--fs-heading-big);
+			}
+
+			@media screen and (max-width: 780px) {
 				text-align: center;
 				font-size: var(--fs-heading-big);
 			}
@@ -288,6 +314,10 @@
 			height: 25rem;
 			width: 50rem;
 
+			@media screen and (max-width: 780px) {
+				display: none;
+			}
+
 			@media screen and (max-width: 440px) {
 				display: none;
 			}
@@ -298,6 +328,9 @@
 		}
 
 		&-button {
+			-webkit-appearance: button;
+			-moz-appearance: button;
+			appearance: button;
 			// justify-content: flex-start;
 			margin-left: 5rem;
 			font-size: var(--fs-text-big);

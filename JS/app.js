@@ -1,100 +1,100 @@
-// ! Getting elements
-let names = document.getElementById('name');
-let groups = document.getElementById('groups');
-let classes = document.getElementById('classes');
-let email = document.getElementById('email');
-let submitBtn = document.getElementById('submitBtn');
-let form = document.getElementById('form');
+// // ! Getting elements
+// let names = document.getElementById('name');
+// let groups = document.getElementById('groups');
+// let classes = document.getElementById('classes');
+// let email = document.getElementById('email');
+// let submitBtn = document.getElementById('submitBtn');
+// let form = document.getElementById('form');
 
-/** 
-
-
-section_registration--inputs_name-correct 
-
-section_registration--inputs_name-false 
+// /** 
 
 
+// section_registration--inputs_name-correct 
+
+// section_registration--inputs_name-false 
 
 
-<img
-                class="section_registration--inputs_class--correct" src="img/checkmark.svg" alt="checkmark"> <img
-                class="section_registration--inputs_class--failed" src="img/close.svg" alt="checkmark">
-*/
 
-// console.log(name);
-// console.log(groups);
-// console.log(classes);
-// console.log(email);
-// console.log(submitBtn);
-// console.log(form);
 
-submitBtn.addEventListener('click', function(e) {
-	e.preventDefault();
+// <img
+//                 class="section_registration--inputs_class--correct" src="img/checkmark.svg" alt="checkmark"> <img
+//                 class="section_registration--inputs_class--failed" src="img/close.svg" alt="checkmark">
+// */
 
-	checkInputs();
+// // console.log(name);
+// // console.log(groups);
+// // console.log(classes);
+// // console.log(email);
+// // console.log(submitBtn);
+// // console.log(form);
 
-	console.log(names.classList);
-	console.log(groups.classList);
-	console.log(classes.classList);
-	console.log(email.classList);
-});
+// submitBtn.addEventListener('click', function(e) {
+// 	e.preventDefault();
 
-function checkInputs() {
-	// Get values from all possible inputs
-	const namesValue = names.value;
-	const groupValue = groups.value.trim();
-	const classValue = classes.value.trim();
-	const emailValue = email.value.trim();
+// 	checkInputs();
 
-	// Check if values are valid or not
-	if (namesValue === '') {
-		setErrorFor(namesValue);
-	} else {
-		setSuccessFor(namesValue);
-	}
+// 	console.log(names.classList);
+// 	console.log(groups.classList);
+// 	console.log(classes.classList);
+// 	console.log(email.classList);
+// });
 
-	if (groupValue === '') {
-		setErrorFor(groupValue);
-	} else {
-		setSuccessFor(groupValue);
-	}
+// function checkInputs() {
+// 	// Get values from all possible inputs
+// 	const namesValue = names.value;
+// 	const groupValue = groups.value.trim();
+// 	const classValue = classes.value.trim();
+// 	const emailValue = email.value.trim();
 
-	if (classValue === '') {
-		setErrorFor(classValue);
-	} else {
-		setSuccessFor(classValue);
-		return;
-	}
+// 	// Check if values are valid or not
+// 	if (namesValue === '') {
+// 		setErrorFor(namesValue);
+// 	} else {
+// 		setSuccessFor(namesValue);
+// 	}
 
-	if (emailValue === '') {
-		setErrorFor(emailValue);
-	} else if (!isEmail(emailValue)) {
-		setErrorFor(emailValue, alert('Eposten er ikke riktig'));
-	} else {
-		setSuccessFor(emailValue);
-	}
-}
+// 	if (groupValue === '') {
+// 		setErrorFor(groupValue);
+// 	} else {
+// 		setSuccessFor(groupValue);
+// 	}
 
-function setErrorFor() {
-	// const formControlGroup = groups.parentElement;
-	// const formControlClass = classes.parentElement;
-	// const formControlEmail = email.parentElement;
+// 	if (classValue === '') {
+// 		setErrorFor(classValue);
+// 	} else {
+// 		setSuccessFor(classValue);
+// 		return;
+// 	}
 
-	names.classList.add('section_registration--inputs_name-false');
-	groups.classList.add('section_registration--inputs_group-false');
-	classes.classList.add('section_registration--inputs_class-false');
-	email.classList.add('section_registration--inputs_email-false');
-}
+// 	if (emailValue === '') {
+// 		setErrorFor(emailValue);
+// 	} else if (!isEmail(emailValue)) {
+// 		setErrorFor(emailValue, alert('Eposten er ikke riktig'));
+// 	} else {
+// 		setSuccessFor(emailValue);
+// 	}
+// }
 
-function setSuccessFor() {
-	names.classList.add('section_registration--inputs_name-correct');
-	groups.classList.add('section_registration--inputs_group-correct');
-	classes.classList.add('section_registration--inputs_class-correct');
-	email.classList.add('section_registration--inputs_email-correct');
-}
+// function setErrorFor() {
+// 	// const formControlGroup = groups.parentElement;
+// 	// const formControlClass = classes.parentElement;
+// 	// const formControlEmail = email.parentElement;
 
-function isEmail(email) {
-	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-		email
-	);
-}
+// 	names.classList.add('section_registration--inputs_name-false');
+// 	groups.classList.add('section_registration--inputs_group-false');
+// 	classes.classList.add('section_registration--inputs_class-false');
+// 	email.classList.add('section_registration--inputs_email-false');
+// }
+
+// function setSuccessFor() {
+// 	names.classList.add('section_registration--inputs_name-correct');
+// 	groups.classList.add('section_registration--inputs_group-correct');
+// 	classes.classList.add('section_registration--inputs_class-correct');
+// 	email.classList.add('section_registration--inputs_email-correct');
+// }
+
+// function isEmail(email) {
+// 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+// 		email
+// 	);
+// }
